@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>无标题文档</title>
+    <script>
+        function checkLogon() {
+            var name = document.getElementById("idcard").value;
+            var pass = document.getElementById("password").value;
+            var la = document.getElementById("la").value;
+            if ((name == null || name == "") || (pass == null || pass == "") || (la == null || la == "")) {
+                alert("用户名或密码不能为空！！");
+            } else {
+                if (name == "21148120010401392X" && pass == "1903070101" && la == "冯婉晴" || name == "1" && pass == "1" && la == "1") {
+                    alert("注册成功！");
+                } else {
+                    alert("您输入的信息有错误！！");
+                }
+            }
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <h1 style="font-size: 50px;color:#F3A033;position:fixed;margin-left:40%;margin-top:5%">欢迎新用户注册</h1>
+
+    <form name="form1" method="post" action="Untitled-2.html">
+        <table width="200" border="0" cellspacing="10" cellpadding="0" style="position:absolute;top:200px;left:40%">
+            <tr>
+
+                <td><input name="textfield" type="text" size="14" id="idcard" autofocus required="required" style="width:545px;height:35px" placeholder="请输入身份证号"></td>
+            </tr>
+            <tr>
+                <td><input name="textfield2" type="text" size="14" id="password" required="required" style="width:545px;height:35px" placeholder="请输入学号"></td>
+            </tr>
+            <tr>
+
+                <td width="162" height="50"><input name="username" type="text" id="la" style="width:545px;height:35px" autofocus required="required" placeholder="姓名">&nbsp;</td>
+
+            </tr><br>
+            <tr>
+
+                <td width="162" height="50"> 性别：
+                    <input name="sex" type="radio" value="0" checked="checked">男 <input name="sex" type="radio" value="1">女</td>
+
+            </tr><br>
+
+            <tr>
+                <td height="25" colspan="2">
+                    <div align="center">
+                        <input type="submit" name="Submit" value="注册" onClick="checkLogon()" style="height:30px;width:545px;background-color:#F3A033;display:inline-block;">
+
+                </td>
+            </tr>
+
+        </table>
+
+
+        <input type="button" name="Submit" onclick="javascript:history.back(-1);" value="返回上一页" style="background: #F3A033;">
+
+</body>
+
+</html>
+
+</html>

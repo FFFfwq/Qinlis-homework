@@ -1,0 +1,20 @@
+{
+    "usermanager": [{
+            "name": "admin",
+            "psw": "passadmin"
+        },
+        {
+            "name": "root",
+            "psw": "root"
+        }
+    ],
+    "frite": [{
+            "name": "apple",
+            "price": "5"
+        },
+        {
+            "name": "banana",
+            "price": "3"
+        }
+    ]
+} 
